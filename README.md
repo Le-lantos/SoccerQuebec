@@ -1,23 +1,21 @@
-# LS PRO · Soccer Québec registration guide
+# LS PRO · Soccer Québec — create a team in Spordle ID
 
 Live site: https://le-lantos.github.io/SoccerQuebec/
 
-French (default) and English guides with two registration paths: LS PRO and Québec Cups (Coupe du Québec senior / Coupe des Maîtres).
+French and English illustrated team creation instructions, with LS PRO and Québec Cups contexts. Both use the same team creation procedure.
 
-## Editing
+## Source
 
-Edit both language sections in guide-data.js. Add verified portalUrl and registrationUrl values. Exact portal instructions and requirements remain drafts pending confirmation. UI translations are in app.js. Brand assets are taken from the supplied LS PRO Word template; preserve their original colors and proportions.
+Annex 2, “Affichage des noms d’équipes”, Cahier des charges Ligue LDP et PLSJQ — Saison 2025, and the instructions supplied by the guide owner. Three original screenshots were extracted from the supplied Word document without changing their contents. English explanations retain the French UI labels shown in the screenshots. Portal appearance may have changed since the screenshots were taken.
 
-## Sharing
+Short name: club name only (required). Full team name: club + category + league + gender (recommended). The historical SOCCER QUEBEC U15 LDP F example is illustrative.
 
-French: ?lang=fr&competition=lspro or ?lang=fr&competition=cups
-English: ?lang=en&competition=lspro or ?lang=en&competition=cups
-Old competition links redirect to the corresponding combined path. Progress is stored per registration path in this browser and shared between languages.
+This guide covers creating and saving a team, not entering a competition, paying fees or obtaining roster approval. No live portal team was created during authoring.
 
-## Deployment
+## Maintain
 
-Commits to main automatically publish through .github/workflows/pages.yml. GitHub Pages source must be GitHub Actions. No build or dependencies are needed.
+Edit both languages in guide-data.js and UI translations in app.js. Use a new asset version in index.html when publishing script or stylesheet changes. Change the localStorage namespace when the checklist steps change so old progress does not apply to a new process.
 
-## Local preview
+## Deploy
 
-Run python3 -m http.server 8080 in the source directory.
+Push to main to publish via the existing GitHub Pages workflow. French default: ?lang=fr&competition=lspro. English: ?lang=en&competition=cups. Old competition aliases remain supported.

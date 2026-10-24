@@ -1,8 +1,12 @@
-// Edit both languages together. Add only verified registration URLs.
+// Source: Annex 2, team naming, season 2025.
 window.GUIDES = {
   "en": {
-    "portalUrl": null,
+    "portalUrl": "https://id.soccer.spordle.com/",
     "resources": [
+      {
+        "label": "Spordle ID — management portal",
+        "url": "https://id.soccer.spordle.com/"
+      },
       {
         "label": "Soccer Québec",
         "url": "https://www.soccerquebec.org/"
@@ -10,93 +14,98 @@ window.GUIDES = {
       {
         "label": "Regional registration resources",
         "url": "https://arsq.qc.ca/registrariat/"
-      },
-      {
-        "label": "Spordle team approval documentation",
-        "url": "https://soutien.spordle.com/space/SIDFR/4168810497/Restrictions%2Bd%2Bquipes-%2BSoccer%2BQu%2Bbec"
       }
     ],
     "competitions": {
       "lspro": {
         "name": "LS PRO",
         "family": "LS PRO",
-        "note": "Confirm the season, division and eligibility requirements with LS PRO before submitting.",
+        "note": "First step for LS PRO: create the team in Spordle ID. The same creation procedure applies to all LS PRO teams.",
         "registrationUrl": null
       },
       "cups": {
         "name": "Québec Cups",
         "family": "SOCCER QUÉBEC",
-        "note": "Includes Coupe du Québec senior and Coupe des Maîtres. Confirm the cup, edition, eligibility, deadline and any entry fees with the organizer.",
+        "note": "First step for Coupe du Québec senior and Coupe des Maîtres: create the team in Spordle ID. Both use the same creation and naming procedure.",
         "registrationUrl": null
       }
     },
     "steps": [
       {
-        "title": "Before you begin",
-        "subtitle": "Gather the details you will need.",
+        "title": "Open the Teams section",
+        "subtitle": "Sign in to Spordle ID.",
         "items": [
-          "Confirm the registration deadline and competition requirements with your administrator.",
-          "Have your club and team details, team contact and roster information ready.",
-          "Confirm that your account has permission to register this team."
-        ],
-        "tip": "Competition eligibility and deadlines are not yet configured in this draft."
-      },
-      {
-        "title": "Access the registration portal",
-        "subtitle": "Use the link supplied by your organization.",
-        "items": [
-          "Open the official registration portal using your club or competition administrator’s link.",
-          "Sign in with your authorized account.",
-          "Check that you are working under the correct club or organization."
+          "Sign in to Spordle ID using your club’s authorized account.",
+          "In the top menu, click “Gestion” (Management), then “Équipes” (Teams)."
         ],
         "action": "portal",
-        "tip": "Use the official registration link supplied by your competition administrator."
+        "image": "assets/team-creation-01-gestion.png",
+        "alt": "Original Annex 2 screenshot: Gestion menu open with Équipes outlined in red.",
+        "caption": "Gestion → Équipes (Management → Teams). Original Annex 2 screenshot.",
+        "tip": "Screenshots come from the 2025 season requirements document. The portal’s appearance may have changed.",
+        "imageWidth": 1907,
+        "imageHeight": 856
       },
       {
-        "title": "Select your competition",
-        "subtitle": "Choose the correct season and event.",
+        "title": "Add a team",
+        "subtitle": "Choose the creation method that fits your needs.",
         "items": [
-          "Find the team registration area in your portal.",
-          "Select the current season and the competition shown at the top of this guide.",
-          "For cups, choose Coupe du Québec senior or Coupe des Maîtres. Check the division and age category where applicable."
+          "Click “Ajouter équipe” (Add team) at the top right of the team list.",
+          "Choose “Roulement” (rollover), “Créer une équipe” (create one team), or “Créer plusieurs équipes” (create multiple teams), as appropriate.",
+          "Apply the same naming rules whichever method you choose."
         ],
-        "action": "competition"
+        "image": "assets/team-creation-02-ajouter.png",
+        "alt": "Original Annex 2 screenshot: Ajouter équipe menu showing Roulement, Créer une équipe and Créer plusieurs équipes.",
+        "caption": "Ajouter équipe → choose a creation method. Original Annex 2 screenshot.",
+        "imageWidth": 1915,
+        "imageHeight": 857
       },
       {
-        "title": "Complete and save your team details",
-        "subtitle": "Review every required field.",
+        "title": "Enter the names and category",
+        "subtitle": "The short name is used for public display.",
         "items": [
-          "Enter or verify your team name, club, team contact and required details.",
-          "Complete the roster, staff and supporting information requested by your competition.",
-          "Save your changes using the portal’s save control, then check that they have been retained."
+          "In “Nom court” (Short name), enter only the club name. Do not add an age category, league, gender, initials or other unnecessary wording.",
+          "This short name appears in schedules and standings on Spordle Page. Divisions already identify the age category and gender.",
+          "Select the correct “Catégorie” (Category) for the team.",
+          "For “Nom d’équipe” (Team name), the recommended format is “CLUB NAME CATEGORY LEAGUE GENDER”."
         ],
-        "tip": "Saving a draft may not complete registration. The exact save button label must be confirmed in your portal."
+        "naming": [
+          {
+            "label": "Short name — required",
+            "value": "SOCCER QUEBEC",
+            "description": "The club name only."
+          },
+          {
+            "label": "Team name — recommended format",
+            "value": "CLUB NAME CATEGORY LEAGUE GENDER",
+            "description": "Annex 2 example: SOCCER QUEBEC U15 LDP F."
+          }
+        ],
+        "image": "assets/team-creation-03-noms.png",
+        "alt": "Original Annex 2 screenshot: Nom court SOCCER QUEBEC, Nom d’équipe SOCCER QUEBEC U15 LDP F, and U-15 LDP Féminin category.",
+        "caption": "Short name: club only. Team name: club + category + league + gender.",
+        "tip": "U15 LDP F is the source document’s example. Use the category, league and gender of the team you are creating; this example does not define the categories offered in LS PRO or cup competitions.",
+        "imageWidth": 1264,
+        "imageHeight": 522
       },
       {
-        "title": "Review and submit",
-        "subtitle": "Make your final check before sending.",
+        "title": "Save the team",
+        "subtitle": "Finish creating the team in Spordle ID.",
         "items": [
-          "Review the competition, season, team details and any required attachments.",
-          "Resolve missing required information and review any fees or declarations displayed.",
-          "Use the portal’s final submission control and review any confirmation prompt."
+          "Review the club name in “Nom court”, the full team name and the selected category.",
+          "Once the information is complete, save the team in Spordle ID."
         ],
-        "tip": "The exact sequence and labels for submission must be verified. Roster approval and competition entry may be separate processes."
-      },
-      {
-        "title": "Keep your confirmation",
-        "subtitle": "Save the evidence and check the status.",
-        "items": [
-          "Check the status displayed in the portal after submission.",
-          "Save the confirmation page or email and any reference number provided.",
-          "If the status is pending, follow up with the organizer. Submission does not necessarily mean approval."
-        ],
-        "tip": "You can use your browser’s Print → Save as PDF on a confirmation page. Printing this guide only saves your checklist."
+        "tip": "Creating a team is a first step. It does not by itself enter the team in LS PRO or a cup competition. Check this guide’s step only after saving the team in the portal."
       }
     ]
   },
   "fr": {
-    "portalUrl": null,
+    "portalUrl": "https://id.soccer.spordle.com/",
     "resources": [
+      {
+        "label": "Spordle ID — portail de gestion",
+        "url": "https://id.soccer.spordle.com/"
+      },
       {
         "label": "Soccer Québec",
         "url": "https://www.soccerquebec.org/"
@@ -104,87 +113,88 @@ window.GUIDES = {
       {
         "label": "Ressources régionales sur les inscriptions",
         "url": "https://arsq.qc.ca/registrariat/"
-      },
-      {
-        "label": "Documentation Spordle — approbation des équipes",
-        "url": "https://soutien.spordle.com/space/SIDFR/4168810497/Restrictions%2Bd%2Bquipes-%2BSoccer%2BQu%2Bbec"
       }
     ],
     "competitions": {
       "lspro": {
         "name": "LS PRO",
         "family": "LS PRO",
-        "note": "Confirmez la saison, la division et les conditions d’admissibilité auprès de la LS PRO avant de soumettre votre inscription.",
+        "note": "Première étape pour la LS PRO : créer l’équipe dans Spordle ID. La même procédure s’applique à toutes les équipes LS PRO.",
         "registrationUrl": null
       },
       "cups": {
         "name": "Coupes du Québec",
         "family": "SOCCER QUÉBEC",
-        "note": "Comprend la Coupe du Québec senior et la Coupe des Maîtres. Confirmez la coupe, l’édition, l’admissibilité, la date limite et les frais auprès de l’organisation.",
+        "note": "Première étape pour la Coupe du Québec senior et la Coupe des Maîtres : créer l’équipe dans Spordle ID. La création et le nommage suivent la même procédure.",
         "registrationUrl": null
       }
     },
     "steps": [
       {
-        "title": "Avant de commencer",
-        "subtitle": "Rassemblez les renseignements nécessaires.",
+        "title": "Ouvrir la section Équipes",
+        "subtitle": "Connectez-vous à Spordle ID.",
         "items": [
-          "Confirmez la date limite et les exigences de la compétition auprès de votre responsable.",
-          "Préparez les renseignements du club et de l’équipe, les coordonnées du responsable et la liste des membres.",
-          "Vérifiez que votre compte dispose des autorisations nécessaires pour inscrire cette équipe."
-        ],
-        "tip": "Les conditions d’admissibilité et les dates limites restent à confirmer dans cette version."
-      },
-      {
-        "title": "Accéder au portail d’inscription",
-        "subtitle": "Utilisez le lien fourni par votre organisation.",
-        "items": [
-          "Ouvrez le portail officiel à partir du lien fourni par le club ou la compétition.",
-          "Connectez-vous avec votre compte autorisé.",
-          "Vérifiez que vous travaillez dans le bon club ou la bonne organisation."
+          "Connectez-vous à Spordle ID avec le compte autorisé de votre club.",
+          "Dans le menu du haut, cliquez sur « Gestion », puis sur « Équipes »."
         ],
         "action": "portal",
-        "tip": "Utilisez le lien officiel d’inscription fourni par votre responsable de compétition."
+        "image": "assets/team-creation-01-gestion.png",
+        "alt": "Capture originale de l’annexe 2 : menu Gestion ouvert et option Équipes encadrée en rouge.",
+        "caption": "Gestion → Équipes. Capture originale de l’annexe 2.",
+        "tip": "Les captures proviennent du cahier des charges de la saison 2025. L’apparence du portail peut avoir évolué.",
+        "imageWidth": 1907,
+        "imageHeight": 856
       },
       {
-        "title": "Choisir la compétition",
-        "subtitle": "Sélectionnez la saison et la compétition appropriées.",
+        "title": "Ajouter une équipe",
+        "subtitle": "Choisissez le mode de création approprié.",
         "items": [
-          "Accédez à la section d’inscription des équipes dans le portail.",
-          "Sélectionnez la saison en cours et la compétition indiquée en haut de ce guide.",
-          "Pour les coupes, choisissez la Coupe du Québec senior ou la Coupe des Maîtres. Vérifiez la division et la catégorie d’âge, s’il y a lieu."
+          "Cliquez sur « Ajouter équipe » en haut à droite de la liste des équipes.",
+          "Choisissez « Roulement », « Créer une équipe » ou « Créer plusieurs équipes », selon votre besoin.",
+          "Appliquez les mêmes règles de nommage, quel que soit le mode choisi."
         ],
-        "action": "competition"
+        "image": "assets/team-creation-02-ajouter.png",
+        "alt": "Capture originale de l’annexe 2 : menu Ajouter équipe avec les choix Roulement, Créer une équipe et Créer plusieurs équipes.",
+        "caption": "Ajouter équipe → choisir le mode de création. Capture originale de l’annexe 2.",
+        "imageWidth": 1915,
+        "imageHeight": 857
       },
       {
-        "title": "Compléter et enregistrer les renseignements",
-        "subtitle": "Vérifiez chaque champ obligatoire.",
+        "title": "Renseigner les noms et la catégorie",
+        "subtitle": "Le nom court sert à l’affichage public.",
         "items": [
-          "Saisissez ou vérifiez le nom de l’équipe, le club, le responsable et les renseignements demandés.",
-          "Complétez les renseignements sur les joueurs, le personnel et les pièces justificatives exigées.",
-          "Enregistrez les modifications avec la commande du portail, puis vérifiez qu’elles ont été conservées."
+          "Dans « Nom court », inscrivez uniquement le nom du club. N’ajoutez ni catégorie d’âge, ni ligue, ni genre, ni initiales ou autre dénomination superflue.",
+          "Ce nom court sera affiché dans les calendriers et les classements sur Spordle Page. Les divisions permettent déjà d’identifier l’âge et le genre.",
+          "Sélectionnez la bonne « Catégorie » pour l’équipe.",
+          "Dans « Nom d’équipe », utilisez de préférence le format « NOM DU CLUB CATÉGORIE LIGUE GENRE »."
         ],
-        "tip": "L’enregistrement d’un brouillon ne termine pas nécessairement l’inscription. Le libellé exact du bouton reste à confirmer."
+        "naming": [
+          {
+            "label": "Nom court — obligatoire",
+            "value": "SOCCER QUEBEC",
+            "description": "Le nom du club seulement."
+          },
+          {
+            "label": "Nom d’équipe — format recommandé",
+            "value": "NOM DU CLUB CATÉGORIE LIGUE GENRE",
+            "description": "Exemple de l’annexe 2 : SOCCER QUEBEC U15 LDP F."
+          }
+        ],
+        "image": "assets/team-creation-03-noms.png",
+        "alt": "Capture originale de l’annexe 2 : Nom court SOCCER QUEBEC, Nom d’équipe SOCCER QUEBEC U15 LDP F et catégorie U-15 LDP Féminin.",
+        "caption": "Nom court : le club seulement. Nom d’équipe : club + catégorie + ligue + genre.",
+        "tip": "L’exemple U15 LDP F est celui du document source. Adaptez la catégorie, la ligue et le genre à l’équipe que vous créez; cet exemple ne définit pas les catégories offertes en LS PRO ou en coupe.",
+        "imageWidth": 1264,
+        "imageHeight": 522
       },
       {
-        "title": "Vérifier et soumettre",
-        "subtitle": "Effectuez une dernière vérification avant l’envoi.",
+        "title": "Enregistrer l’équipe",
+        "subtitle": "Terminez la création dans Spordle ID.",
         "items": [
-          "Vérifiez la compétition, la saison, les renseignements de l’équipe et les pièces jointes.",
-          "Complétez les renseignements manquants et vérifiez les frais ou déclarations affichés.",
-          "Utilisez la commande de soumission finale du portail et vérifiez toute demande de confirmation."
+          "Vérifiez le nom du club dans « Nom court », le nom d’équipe et la catégorie sélectionnée.",
+          "Une fois les renseignements complétés, enregistrez l’équipe dans Spordle ID."
         ],
-        "tip": "La séquence et les libellés exacts restent à confirmer. L’approbation du cahier d’équipe et l’inscription à une compétition peuvent être distinctes."
-      },
-      {
-        "title": "Conserver la confirmation",
-        "subtitle": "Gardez une preuve et vérifiez le statut.",
-        "items": [
-          "Vérifiez le statut affiché dans le portail après la soumission.",
-          "Conservez la page ou le courriel de confirmation ainsi que tout numéro de référence.",
-          "Si le statut est en attente, faites un suivi auprès de l’organisation. Une soumission ne constitue pas nécessairement une approbation."
-        ],
-        "tip": "Pour conserver une confirmation, utilisez Imprimer → Enregistrer au format PDF dans votre navigateur. Imprimer ce guide conserve uniquement votre liste de suivi."
+        "tip": "La création de l’équipe est une première étape. Elle ne constitue pas à elle seule une inscription à la LS PRO ou à une coupe. Cochez cette étape dans le guide après avoir enregistré l’équipe dans le portail."
       }
     ]
   }
