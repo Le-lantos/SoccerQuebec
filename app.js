@@ -9,7 +9,7 @@ let checked = [];
 function readProgress() { try { const saved = JSON.parse(localStorage.getItem('lspro-guide-v2-' + selected)); checked = Array.isArray(saved) ? saved.filter(n => Number.isInteger(n) && n >= 0 && n < data.steps.length) : []; } catch { checked = []; } }
 function store() { try { localStorage.setItem('lspro-guide-v2-' + selected, JSON.stringify(checked)); } catch {} }
 function link(label,url) { const a=document.createElement('a'); a.textContent=label+' ↗'; a.href=url; a.target='_blank'; a.rel='noopener noreferrer'; return a; }
-function progress() { $('#count').textContent=language === 'fr' ? checked.length+' étapes terminées sur '+data.steps.length : checked.length+' of '+data.steps.length+' steps completed'; $('#progress').max=data.steps.length; $('#progress').value=checked.length; $('#complete').hidden=checked.length!==data.steps.length; document.querySelectorAll('.step').forEach((el,i)=>el.classList.toggle('done',checked.includes(i))); }
+function progress() { $('#count').textContent=language === 'fr' ? 'Étapes terminées : '+checked.length+' / '+data.steps.length : checked.length+' of '+data.steps.length+' steps completed'; $('#progress').max=data.steps.length; $('#progress').value=checked.length; $('#complete').hidden=checked.length!==data.steps.length; document.querySelectorAll('.step').forEach((el,i)=>el.classList.toggle('done',checked.includes(i))); }
 function render() {
  translateUI();
  const c=data.competitions[selected]; $('#competition').value=selected; $('#family').textContent=c.family; $('#title').textContent=c.name; $('#competition-note').textContent=c.note;
@@ -45,3 +45,4 @@ function translateUI(){
  document.querySelector('meta[name="description"]').content=language==='fr'?'Guide d’inscription des équipes : LS PRO et Coupes du Québec.':'Team registration guide: LS PRO and Québec Cups.';
 }
 render();
+
